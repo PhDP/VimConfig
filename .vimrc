@@ -5,4 +5,6 @@ set number
 set history=1000
 set visualbell
 set textwidth=80
+let vimclojure#HighlightBuiltins=1
+let vimclojure#ParenRainbow=1
 
