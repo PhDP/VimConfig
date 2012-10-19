@@ -7,4 +7,5 @@ set visualbell
 set textwidth=80
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
+let g:lisp_rainbow=1
 
