@@ -10,5 +10,5 @@ Main config file for vim. Yes I put too much there :P
 
 terminalrc
 ----------
-Config file for xfce's terminal.
+Config file for xfce's terminal (~/.config/Terminal/).
 
