@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cp .vimrc ~/
 cp .ghci ~/
 chmod 644 ~/.ghci

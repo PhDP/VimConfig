@@ -1,14 +1,8 @@
-.ghci
------
-Config file for the Glasgow Haskell Compiler. Must set:
+install.sh
+==========
+Install basic config files for Linux.
 
-	$ chmod 644 ~/.ghci
-
-.vimrc
-------
-Main config file for vim. Yes I put too much there :P
-
-terminalrc
-----------
-Config file for xfce's terminal (~/.config/Terminal/).
+openbox.sh
+==========
+Install basic config files for the openbox window manager.
 
