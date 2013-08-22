@@ -817,5 +817,8 @@
 
   # end of the example
 -->
+  <application class="*">
+    <maximized>yes</maximized>
+  </application>
   </applications>
 </openbox_config>
