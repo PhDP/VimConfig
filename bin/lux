@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+if ARGV.length != 1 then
+  puts "Provide a single argument between 0.1 (nearly black) and 1.0 (max brigthness)."
+  exit(42)
+end
+
+b = ARGV[0].to_f
+b = (if b < 0.1 then 0.1 elsif b > 1.0 then 1.0 else b end).to_s
+
+puts 'Setting brightness to ' + b
+exec 'xrandr --output eDP1 --brightness ' + b
+

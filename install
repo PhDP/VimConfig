@@ -4,5 +4,6 @@ cp .vimrc ~/
 cp .ghci ~/
 chmod 644 ~/.ghci
 cp .tmux.conf ~/
-cp terminalrc ~/.config/Terminal/
+cp terminalrc ~/.config/xfce4/terminal/
+sudo cp bin/* /bin/
 
