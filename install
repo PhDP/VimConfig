@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp .conkyrc ~/
 cp .vimrc ~/
 cp .ghci ~/
 chmod 644 ~/.ghci
