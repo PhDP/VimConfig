@@ -19,5 +19,6 @@ MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 ColorBackground=#ffffffffffff
 ColorForeground=#000000000000
-ColorPalette=#000000000000;#aaaa00000000;#31c775ca31c7;#aaaa55550000;#00000000aaaa;#aaaa0000aaaa;#000076dfaaaa;#aaaaaaaaaaaa;#555555555555;#ffff55555555;#0000a1080000;#ffffffff5555;#55555555ffff;#ffff5555ffff;#00009bc39bc3;#ffffffffffff
+ColorPalette=#000000000000;#aaaa00000000;#31c775ca31c7;#aaaa55550000;#00000000aaaa;#aaaa0000aaaa;#3063713fc56a;#aaaaaaaaaaaa;#555555555555;#ffff55555555;#0000a1080000;#ffffffff5555;#55555555ffff;#ffff5555ffff;#00007676aaaa;#ffffffffffff
+ColorCursor=#04bed70304be
 
