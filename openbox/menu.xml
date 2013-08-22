@@ -81,7 +81,7 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Terminal">
+  <item label="LXTerminal">
     <action name="Execute">
       <command>lxterminal</command>
       <startupnotify>
@@ -105,7 +105,7 @@
       </startupnotify>
     </action>
   </item>
-  <item label="XFCE Terminal">
+  <item label="Terminal">
     <action name="Execute">
       <command>xfce4-terminal</command>
       <startupnotify>
