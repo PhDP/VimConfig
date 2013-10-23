@@ -11,9 +11,9 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Chromium">
+  <item label="Transmission">
     <action name="Execute">
-      <command>chromium-browser</command>
+      <command>transmission-gtk</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -113,12 +113,27 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Chromium">
+  <item label="Firefox">
     <action name="Execute">
-      <command>chromium-browser</command>
+      <command>firefox</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Chromium</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="emacs">
+    <action name="Execute">
+      <command>emacs</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Sublime">
+    <action name="Execute">
+      <command>~/bin/Sublime\ Text\ 2/sublime_text</command>
+      <startupnotify>
+        <enabled>yes</enabled>
       </startupnotify>
     </action>
   </item>
