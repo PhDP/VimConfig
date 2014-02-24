@@ -81,9 +81,9 @@
       </startupnotify>
     </action>
   </item>
-  <item label="LXTerminal">
+  <item label="Terminal">
     <action name="Execute">
-      <command>lxterminal</command>
+      <command>gnome-terminal</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -99,7 +99,7 @@
   <separator label="Favorites" />
   <item label="Files">
     <action name="Execute">
-      <command>pcmanfm</command>
+      <command>nautilus</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -107,7 +107,7 @@
   </item>
   <item label="Terminal">
     <action name="Execute">
-      <command>xfce4-terminal</command>
+      <command>gnome-terminal</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -116,22 +116,6 @@
   <item label="Firefox">
     <action name="Execute">
       <command>firefox</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="emacs">
-    <action name="Execute">
-      <command>emacs</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Sublime">
-    <action name="Execute">
-      <command>~/bin/Sublime\ Text\ 2/sublime_text</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>

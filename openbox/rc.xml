@@ -57,57 +57,57 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>18</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -229,9 +229,9 @@
     <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="W-p">
+    <keybind key="W-n">
       <action name="Execute">
-        <command>pcmanfm</command>
+        <command>nautilus</command>
         <startupnotify>
           <enabled>yes</enabled>
         </startupnotify>
@@ -239,7 +239,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>gnome-terminal</command>
         <startupnotify>
           <enabled>yes</enabled>
         </startupnotify>
@@ -253,22 +253,6 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <command>emacs</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="W-g">
-      <action name="Execute">
-        <command>gnome-terminal</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>xfce4-screenshooter</command>
@@ -277,25 +261,9 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-x">
-      <action name="Execute">
-        <command>comix</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <command>firefox</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="W-s">
-      <action name="Execute">
-        <command>~/bin/Sublime\ Text\ 2/sublime_text</command>
         <startupnotify>
           <enabled>yes</enabled>
         </startupnotify>
@@ -793,8 +761,5 @@
 
   # end of the example
 -->
-    <application class="*">
-      <maximized>yes</maximized>
-    </application>
   </applications>
 </openbox_config>
