@@ -26,17 +26,10 @@ set nowritebackup
 " Format paragraph
 map <C-f> gqip
 
-" Settings for lisp.
-let g:lisp_rainbow=1
-
-let g:clang_library_path='/usr/lib/llvm-3.4/lib/'
+let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
 let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto=1
 let g:clang_complete_copen=1
-
-" Settings for Clojure.
-let vimclojure#HighlightBuiltins=1
-let vimclojure#ParenRainbow=1
 
 " Time stamp.
 fun TS()
