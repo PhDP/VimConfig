@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " Use Vim settings
 set nocompatible
 
@@ -6,8 +8,8 @@ filetype plugin indent on
 
 " Indentation settings (pressing < or > will let you indent/unident selected lines):
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set autoindent
 
 " Line numbering...
@@ -23,16 +25,10 @@ set visualbell
 set nobackup
 set nowritebackup
 
-" Format paragraph
 map <C-f> gqip
 
-let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
-let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto=1
-let g:clang_complete_copen=1
-
-" Time stamp.
-fun TS()
-  return "Last-modified: " . strftime("%F at %T.")
-endfun
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
