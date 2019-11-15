@@ -1,0 +1,11 @@
+CMAKE_V=3.14.5
+CMAKE_SV=${CMAKE_V::-2}
+wget https://cmake.org/files/v${CMAKE_SV}/cmake-${CMAKE_V}.tar.gz
+tar xf cmake-${CMAKE_V}.tar.gz
+cd cmake-${CMAKE_V}
+./configure
+make -j4
+sudo make install
+cd ..
+rm cmake-${CMAKE_V}.tar.gz
+rm -rf cmake-${CMAKE_V}

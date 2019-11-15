@@ -1,2 +1,0 @@
-xrdb -merge ~/.Xdefaults & nitrogen --restore & conky
-

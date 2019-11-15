@@ -8,15 +8,28 @@ filetype plugin indent on
 
 " Indentation settings (pressing < or > will let you indent/unident selected lines):
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set autoindent
 
 " Line numbering...
 set number
 
-" Keep a loooooooong history.
-set history=1000
+set cursorline
+
+set wildmenu
+
+set lazyredraw
+
+set showmatch
+
+" Searching
+
+set incsearch     " Search as characters are entered
+set hlsearch      " Highlight matches
+
+set history=1000  " Keep a loooooooong history.
 
 " No annoying sounds!
 set visualbell
@@ -31,4 +44,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" https://github.com/luochen1990/rainbow
 

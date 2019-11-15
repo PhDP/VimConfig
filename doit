@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp config/vimrc ~/.vimrc
+cp config/ghci ~/.ghci
+chmod 644 ~/.ghci
+sudo cp bin/* /bin/
