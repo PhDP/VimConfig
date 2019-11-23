@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./install/cmake.sh
+./install/haskell.sh
+./install/rust.sh
+./install/ubuntu_vim_setup.sh
+./install/vim_packages.sh
+
+./doit

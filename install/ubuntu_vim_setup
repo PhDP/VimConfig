@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo apt install curl git build-essential python-dev python3-dev
+
