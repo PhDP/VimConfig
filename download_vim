@@ -1,0 +1,31 @@
+#!/bin/bash
+
+sudo apt install curl git build-essential python-dev python3-dev
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+cd ~/.vim/bundle
+
+git clone --depth=1 https://github.com/tpope/vim-sensible.git
+git clone --depth=1 https://github.com/kien/rainbow_parentheses.vim.git
+git clone --depth=1 https://github.com/rust-lang/rust.vim.git
+git clone --depth=1 https://github.com/Valloric/YouCompleteMe
+git clone --depth=1 https://github.com/eagletmt/ghcmod-vim.git
+git clone --depth=1 https://github.com/eagletmt/neco-ghc
+git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git
+git clone --depth=1 https://github.com/scrooloose/syntastic.git
+git clone --depth=1 https://github.com/Shougo/neocomplete.vim.git
+
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+./install.py --rust-completer
+
+cd ~/.vim/bundle/
+git clone https://github.com/Shougo/vimproc.vim.git
+cd vimproc.vim
+make
+
+mkdir -p ~/Developer/
+cd ~/Developer/
+git clone --depth 1 --branch master https://github.com/rust-lang/rust rust-master
