@@ -6,5 +6,8 @@ echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 cp config/tmux ~/.tmux
 cp config/vimrc ~/.vimrc
 
+mkdir -p ~/.config/nvim/
+cp config/init.vim ~/.config/nvim/
+
 cp config/ghci ~/.ghci
 chmod 644 ~/.ghci
