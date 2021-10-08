@@ -1,10 +1,10 @@
-execute pathogen#infect()
-
 " Use Vim settings
 set nocompatible
 
 syntax on
 filetype plugin indent on
+
+map <Leader>p :NERDTreeToggle<CR>
 
 " Indentation settings (pressing < or > will let you indent/unident selected lines):
 set expandtab
@@ -26,10 +26,6 @@ set hlsearch        " Highlight matches
 set history=1000    " Keep a loooooooong history.
 set visualbell      " No annoying sounds!
 
-" netrw
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
 " Prevent vim from creating backups.
 set nobackup
 set nowritebackup
@@ -37,8 +33,6 @@ set nowritebackup
 " Remappings
 
 map <C-f> gqip
-
-" Packages
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound

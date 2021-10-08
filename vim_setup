@@ -1,0 +1,41 @@
+#!/bin/bash
+
+mkdir -p ~/.local/bin
+echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
+
+cp config/tmux ~/.tmux
+cp config/vimrc ~/.vimrc
+
+mkdir -p ~/.config/nvim/
+cp config/init.vim ~/.config/nvim/
+
+cp config/ghci ~/.ghci
+chmod 644 ~/.ghci
+
+mkdir -p ~/Developer/
+rm -rf ~/Developer/rust-master
+git clone --depth=1 --branch master git@github.com:rust-lang/rust.git ~/Developer/rust-master
+
+START=~/.vim/pack/phdp/start
+rm -rf $START
+mkdir -p $START
+
+git clone --depth=1 git@github.com:tpope/vim-fugitive.git $START/fugitive
+git clone --depth=1 git@github.com:rust-lang/rust.vim.git $START/rust.vim
+git clone --depth=1 git@github.com:kien/rainbow_parentheses.vim.git $START/rainbow_parentheses.vim
+git clone --depth=1 git@github.com:ycm-core/YouCompleteMe.git $START/YouCompleteMe
+git clone --depth=1 git@github.com:ctrlpvim/ctrlp.vim.git $START/ctrlp.vim
+git clone --depth=1 git@github.com:scrooloose/syntastic.git $START/syntastic
+git clone --depth=1 git@github.com:Shougo/vimproc.vim.git $START/vimproc.vim
+git clone --depth=1 git@github.com:preservim/nerdtree.git $START/nerdtree
+
+cd $START/YouCompleteMe
+git submodule update --init --recursive
+./install.py --rust-completer
+
+cd $START/vimproc.vim
+make
+
+cd $START
+vim -u NONE -c "helptags nerdtree/doc" -c q
+vim -u NONE -c "helptags fugitive/doc" -c q
