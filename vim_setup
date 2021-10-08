@@ -3,13 +3,13 @@
 mkdir -p ~/.local/bin
 echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 
-cp config/tmux ~/.tmux
-cp config/vimrc ~/.vimrc
+cp dotfiles/tmux ~/.tmux
+cp dotfiles/vimrc ~/.vimrc
 
 mkdir -p ~/.config/nvim/
-cp config/init.vim ~/.config/nvim/
+cp dotfiles/init.vim ~/.config/nvim/
 
-cp config/ghci ~/.ghci
+cp dotfiles/ghci ~/.ghci
 chmod 644 ~/.ghci
 
 mkdir -p ~/Developer/
