@@ -3,7 +3,15 @@
 mkdir -p ~/.local/bin
 echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 
-cp dotfiles/tmux ~/.tmux
+# Tmux
+
+rm -rf ~/.tmux/plugins/
+mkdir -p ~/.tmux/plugins/
+cp dotfiles/tmux.conf ~/.tmux.conf
+git clone --depth=1 git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Vim
+
 cp dotfiles/vimrc ~/.vimrc
 
 mkdir -p ~/.config/nvim/
@@ -13,7 +21,7 @@ cp dotfiles/ghci ~/.ghci
 chmod 644 ~/.ghci
 
 mkdir -p ~/Developer/
-rm -rf ~/Developer/rust-master
+rm -rf ~/Developer/rust-master/
 git clone --depth=1 --branch master git@github.com:rust-lang/rust.git ~/Developer/rust-master
 
 START=~/.vim/pack/phdp/start
