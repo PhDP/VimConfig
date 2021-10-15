@@ -1,8 +1,13 @@
 " Use Vim settings
+" 
 set nocompatible
 
 syntax on
 filetype plugin indent on
+
+" Show tabs
+set list
+set listchars=tab:▸\ 
 
 " Remappings
 map <Leader>p :NERDTreeToggle<CR>
