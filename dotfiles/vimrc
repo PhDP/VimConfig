@@ -1,5 +1,4 @@
-" Use Vim settings
-" 
+" Use Vim settings 
 set nocompatible
 
 syntax on
@@ -8,6 +7,10 @@ filetype plugin indent on
 " Show tabs
 set list
 set listchars=tab:▸\ 
+
+set completeopt-=preview
+
+let g:NERDTreeWinPos = "right"
 
 " Remappings
 map <Leader>p :NERDTreeToggle<CR>
