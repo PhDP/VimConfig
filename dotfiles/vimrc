@@ -10,8 +10,6 @@ set listchars=tab:▸\
 
 set completeopt-=preview
 
-let g:NERDTreeWinPos = "right"
-
 " Remappings
 map <Leader>p :NERDTreeToggle<CR>
 map <C-f> gqip " Reflow text
@@ -41,6 +39,11 @@ set visualbell      " No annoying sounds!
 " Prevent vim from creating backups.
 set nobackup
 set nowritebackup
+
+let g:NERDTreeWinPos = "right"
+
+let g:syntastic_enable_highlighting=0
+let g:syntastic_enable_signs=1
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
