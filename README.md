@@ -5,7 +5,7 @@ Rust & Haskell using vim & tmux on Linux (Ubuntu) or OSX.
 
 ## Installing
 
-    $ bash vim_setup
+    $ bash setup
 
 ...should install everything **but** you need a few of the usual suspects
 (cmake, git, a C/C++ compiler).
