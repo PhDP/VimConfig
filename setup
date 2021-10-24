@@ -3,12 +3,8 @@
 mkdir -p ~/.local/bin
 echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 
-# Tmux
-
-rm -rf ~/.tmux/plugins/
-mkdir -p ~/.tmux/plugins/
-cp dotfiles/tmux.conf ~/.tmux.conf
-git clone --depth=1 git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp dotfiles/ghci ~/.ghci
+chmod 644 ~/.ghci
 
 # Vim
 
@@ -16,9 +12,6 @@ cp dotfiles/vimrc ~/.vimrc
 
 mkdir -p ~/.config/nvim/
 cp dotfiles/init.vim ~/.config/nvim/
-
-cp dotfiles/ghci ~/.ghci
-chmod 644 ~/.ghci
 
 mkdir -p ~/Developer/
 rm -rf ~/Developer/rust-master/

@@ -30,17 +30,6 @@ You need brew's macvim:
     $ brew install macvim
     $ echo "alias vim='mvim -v'" >> ~/.zshrc
 
-## tmux setup
-
-If you care about tmux you'll need to type **Ctrl-b I** to install the packages.
-
-For tmux-yank: on Linux you need to install **xsel** for X or **wl-copy** for
-Wayland. On OSX:
-
-    $ brew install reattach-to-user-namespace
-
-Windows Subsystem for Linux has everything out-of-the-box.
-
 ## License
 
 MIT (see LICENSE.md)
