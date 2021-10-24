@@ -1,4 +1,4 @@
-# Config
+# Config files (mostly Vim)
 
 A few config files and small utilities. It's mostly focused on programming with
 Rust & Haskell using vim & tmux on Linux (Ubuntu) or OSX.
