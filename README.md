@@ -15,7 +15,7 @@ and the Haskell/GHC toolchain with [ghcup](https://www.haskell.org/ghcup/).
 
 ## Ubuntu
 
-    $ sudo apt install vim tmux curl cmake git build-essential
+    $ sudo apt install vim tmux curl cmake git build-essential vim-nox python3-dev
 
 It's also a good idea to install
 
