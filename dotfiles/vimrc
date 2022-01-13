@@ -17,6 +17,13 @@ map <F5> :setlocal spell! spelllang=en_ca<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
+command Nat       :normal! i ℕ <ESC>
+command Int       :normal! i ℤ <ESC>
+command Real      :normal! i ℝ <ESC>
+command Rat       :normal! i ℚ <ESC>
+command Complex   :normal! i ℂ <ESC>
+command RA        :normal! i → <ESC>
+
 " Indentation settings (pressing < or > will let you indent/unident selected lines):
 set expandtab
 set shiftwidth=2
