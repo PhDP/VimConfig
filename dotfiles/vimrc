@@ -1,4 +1,4 @@
-" Use Vim settings 
+" Use Vim settings
 set nocompatible
 
 syntax on
@@ -6,7 +6,7 @@ filetype plugin indent on
 
 " Show tabs
 set list
-set listchars=tab:▸\ 
+set listchars=tab:▸\
 
 set completeopt-=preview
 
@@ -16,13 +16,6 @@ map <C-f> gqip " Reflow text
 map <F5> :setlocal spell! spelllang=en_ca<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
-
-command Nat       :normal! i ℕ <ESC>
-command Int       :normal! i ℤ <ESC>
-command Real      :normal! i ℝ <ESC>
-command Rat       :normal! i ℚ <ESC>
-command Complex   :normal! i ℂ <ESC>
-command RA        :normal! i → <ESC>
 
 " Indentation settings (pressing < or > will let you indent/unident selected lines):
 set expandtab
@@ -56,4 +49,49 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Shortcuts for greek letters and math symbols:
+
+" Double-struck capitals:
+command Nat         :normal! i ℕ <ESC>
+command Int         :normal! i ℤ <ESC>
+command Real        :normal! i ℝ <ESC>
+command Rat         :normal! i ℚ <ESC>
+command Complex     :normal! i ℂ <ESC>
+
+" Logic:
+command Lto         :normal! i → <ESC>
+command Lneg        :normal! i ¬ <ESC>
+command Land        :normal! i ∧ <ESC>
+command Lor         :normal! i ∨ <ESC>
+command Ltop        :normal! i ⊤ <ESC>
+command Lbot        :normal! i ⊥ <ESC>
+command Lforall     :normal! i ∀ <ESC>
+command Lexists     :normal! i ∃ <ESC>
+command Lproves     :normal! i ⊢ <ESC>
+command Lup         :normal! i ↑ <ESC>
+command Ldown       :normal! i ↓ <ESC>
+command Ltherefore  :normal! i ∴ <ESC>
+command Lbecause    :normal! i ∵ <ESC>
+
+" Greek letters:
+command Gra         :normal! i α <ESC>
+command Grb         :normal! i β <ESC>
+command Grg         :normal! i γ <ESC>
+command GrG         :normal! i Γ <ESC>
+command Grd         :normal! i δ <ESC>
+command GrD         :normal! i Δ <ESC>
+command Greps       :normal! i ε <ESC>
+command Greta       :normal! i η <ESC>
+command Grz         :normal! i ζ <ESC>
+command Grl         :normal! i λ <ESC>
+command GrL         :normal! i Λ <ESC>
+command Grt         :normal! i θ <ESC>
+command GrT         :normal! i Θ <ESC>
+command Grs         :normal! i σ <ESC>
+command GrS         :normal! i Σ <ESC>
+command Grp         :normal! i π <ESC>
+command GrP         :normal! i Π <ESC>
+command Grw         :normal! i ω <ESC>
+command GrW         :normal! i Ω <ESC>
 
